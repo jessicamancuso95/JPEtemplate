@@ -6,9 +6,10 @@
 clear all
 set more off
 
-cd ".."
-cd "C:/Users/Window/Desktop/Dottorato_CCA/Replication_package"
+*cd ".."
+*cd "C:/Users/Window/Desktop/Dottorato_CCA/Replication_package"
 
+cd "/Users/jessicamancuso/Documents/JPEtemplate/replication-package"
 pwd
 
 * Load configuration
@@ -21,7 +22,7 @@ cap mkdir "${descriptives_table}"
 
 * 0 = use provided appended .dta file
 * 1 = rebuild appended .dta file from raw TXT files
-global rebuild_from_raw 0
+global rebuild_from_raw 1
 
 * From txt to dta and append the whole dataset
 pwd
